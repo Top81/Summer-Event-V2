@@ -1,11 +1,11 @@
 getgenv().config = {
-    AutoRebirth = false, --// Turn auto rebirth off if false
+    AutoRebirth = true, --// Turn auto rebirth off if false
     Delay = 0.1, --// Delay between buying tiles
     Optimize = true, --// Optimization
     FPSCap = 60, --// What FPS to use
     TeleportCheckInterval = 5, -- // How often to check whether near egg
     StopOnTitanic = false, --// if true, will stop rebirthing when any Tier Five egg is present (ignores SpecificEggsToStopOn if true)
-    StopOnChance = {}, --// Valid options: "100x", "25x", if StopOnTitanic 
+    StopOnChance = {"100x", "25x",}, --// Valid options: "100x", "25x", if StopOnTitanic 
     SpecificEggsToStopOn = {"Block Party Tier Eight 100x", "Block Party Tier Eight 25x"}, --// Same valid options as stoponchance just add block party and tier
     ToggleUI = true, --// if false you can see what its doing
     AutoRaffle = false, --// false -> wont do raffle
